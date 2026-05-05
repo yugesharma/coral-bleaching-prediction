@@ -1,0 +1,28 @@
+{
+  "val": {
+    "roc_auc": 0.9629,
+    "pr_auc": 0.9418,
+    "threshold": 0.676,
+    "accuracy": 0.9222,
+    "precision": 0.882,
+    "recall": 0.8971,
+    "f1": 0.8895,
+    "tp": 157,
+    "tn": 305,
+    "fp": 21,
+    "fn": 18
+  },
+  "test": {
+    "roc_auc": 0.9777,
+    "pr_auc": 0.9739,
+    "threshold": 0.676,
+    "accuracy": 0.9337,
+    "precision": 0.9808,
+    "recall": 0.8361,
+    "f1": 0.9027,
+    "tp": 51,
+    "tn": 104,
+    "fp": 1,
+    "fn": 10
+  }
+}

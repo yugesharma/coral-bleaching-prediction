@@ -1,0 +1,48 @@
+model:
+  name: cnn_attention
+
+data:
+  train_path: data/processed/train.pkl
+  val_path: data/processed/val.pkl
+  test_path: data/processed/test.pkl
+  sequence:
+    channels:
+      - TEMP
+      - PSAL
+    n_depths: 150
+  features:
+    - mmm_sst
+    - surface_sst_anom
+    - hotspot
+    - mld
+    - ohc_30m
+    - hp_depth
+    - dhw_at_T
+    - dhw_lag_7d
+    - dhw_lag_14d
+    - dhw_lag_28d
+    - dhw_delta_1w
+    - dhw_delta_4w
+  target: label
+
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.001
+  early_stopping_patience: 15
+  seed: 42
+
+hyperparameters:
+  n_filters: 32
+  kernel_size: 5
+  n_conv_layers: 2
+  attention_hidden_dim: 16
+  dropout: 0.3
+
+hpo:
+  n_trials: 50
+  metric: pr_auc
+  direction: maximize
+
+output:
+  dir: experiments/runs/cnn_attention

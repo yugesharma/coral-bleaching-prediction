@@ -1,0 +1,4 @@
+model,val_roc_auc,val_pr_auc,val_f1,test_roc_auc,test_pr_auc,test_f1,test_precision,test_recall,threshold
+xgboost,0.9621,0.9419,0.8719,0.9139,0.9143,0.8154,0.7681,0.8689,0.3366
+dnn,0.9629,0.9418,0.8895,0.9777,0.9739,0.9027,0.9808,0.8361,0.676
+cnn_attention,0.9668,0.9452,0.8789,0.9824,0.9752,0.9256,0.9333,0.918,0.5408

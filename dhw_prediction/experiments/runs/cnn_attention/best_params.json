@@ -1,0 +1,9 @@
+{
+  "n_filters": 64,
+  "kernel_size": 7,
+  "n_conv_layers": 3,
+  "attention_hidden_dim": 16,
+  "dropout": 0.1652496590664527,
+  "lr": 0.005219596485013182,
+  "batch_size": 32
+}
