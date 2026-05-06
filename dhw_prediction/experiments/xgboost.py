@@ -17,7 +17,7 @@ from src.evaluation.plots import (
     plot_roc_curve, plot_pr_curve, plot_confusion_matrix
 )
 
-RESULTS_DIR = 'experiments/runs/xgboost'
+RESULTS_DIR = 'experiments/runs/xgboost-onlydhw'
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 
